@@ -1,0 +1,54 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ragpro_grad1" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="ragpro_grad2" x1="40" y1="8" x2="8" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="ragpro_glow" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="neon_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Backdrop -->
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#ragpro_glow)" opacity="0.12" />
+
+  <!-- Outer Hexagonal Neural Shield -->
+  <path d="M24 6L39 14.66V33.34L24 42L9 33.34V14.66L24 6Z" 
+        stroke="url(#ragpro_grad1)" 
+        stroke-width="2.5" 
+        stroke-linejoin="round" 
+        stroke-linecap="round" 
+        filter="url(#neon_glow)" />
+
+  <!-- Dynamic Vector Flow Lines (The 'R' and flowing neural retrieval ribbon) -->
+  <path d="M18 16V32M18 24C21 24 28 24 28 19C28 14 21 14 18 14H15" 
+        stroke="url(#ragpro_grad2)" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Diagonal Quantum Velocity Beam -->
+  <path d="M23 23.5L31 32" 
+        stroke="url(#ragpro_grad1)" 
+        stroke-width="3.2" 
+        stroke-linecap="round" />
+
+  <!-- Neural Core Nodes -->
+  <circle cx="31" cy="32" r="2.5" fill="#38BDF8" filter="url(#neon_glow)" />
+  <circle cx="28" cy="19" r="2" fill="#C084FC" />
+  <circle cx="24" cy="6" r="2" fill="#818CF8" />
+  <circle cx="9" cy="24" r="1.5" fill="#38BDF8" opacity="0.75" />
+</svg>
